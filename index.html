@@ -1,0 +1,200 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Carousel Template · Bootstrap v5.1</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header>
+  
+</header>
+
+<main>
+  
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'images/m1.jpg'  %}" width="80%" height="100%">
+        <div class="container">
+          <div class="carousel-caption text-start">
+                </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/m2.jpg'  %}" width="80%" height="100%">
+        <div class="container">
+          <div class="carousel-caption">
+           
+          </div>
+        </div>
+      </div>
+      {% comment %} <div class="carousel-item">
+        <img src="{% static 'Images/FIFA-22.jpg'  %}" width="100%" height="100%">
+        <div class="container">
+             </div>
+        </div>
+      </div> {% endcomment %}
+    </div>
+   
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+  <hr class="featurette-divider">
+{% comment %} 
+  <div class="container marketing">
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+             <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="{% static 'Images/thumb-1920-597965.jpg'  %}" width="100%" height="100%">
+
+        <h2>CALL OF DUTY</h2>
+       <a class="btn btn-secondary" href="/signin">BUY</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="{% static 'Images/FIFA-22.jpg'  %}" width="100%" height="100%">
+     <h2>FIFA 22</h2>
+        
+        <p><a class="btn btn-secondary" href="/signin">BUY</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="{% static 'Images/gta iv.jpg'  %}" width="100%" height="100%">
+
+        <h2>GTA V</h2>
+        
+        <p><a class="btn btn-secondary" href="/signin">BUY</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="{% static 'Images/ps4.jpeg'  %}" width="100%" height="100%">
+
+        <h2>PS4</h2>
+        
+        <p><a class="btn btn-secondary" href="/signin">BUY</a></p>
+      </div>
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="{% static 'Images/ps5.jpg'  %}" width="100%" height="100%">
+        <h2>PS5</h2>
+        
+        <p><a class="btn btn-secondary" href="/sigin">BUY</a></p>
+      </div>
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="{% static 'Images/xbox 2020.jpeg'  %}" width="100%" height="100%">
+
+        <h2>XBOX 2020</h2>
+       
+        <p><a class="btn btn-secondary" href="/sigin">BUY</a></p>
+      </div>
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="{% static 'Images/xbox 2022.jpg'  %}" width="100%" height="100%">
+
+        <h2>XBOX 2022</h2>
+       
+        <p><a class="btn btn-secondary" href="/sigin">BUY</a></p>
+      </div>
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="{% static 'Images/W2K.jpg'  %}" width="100%" height="100%">
+        <h2>WWE2K22</h2>
+                <p><a class="btn btn-secondary" href="/sigin">BUY</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row --> {% endcomment %}
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading"> <a name="ABOUT US">About Us</a></h2>
+        <p class="lead">Musicart Society is providing courses to the deisred once since 2009.
+
+          MusicArt provides quality music education from early child to adults.</p>
+      </div>
+      <div class="col-md-5">
+        
+      </div>
+    </div>
+
+    <hr class="featurette-divider"><div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading"><a name="CONTACT US"></a>CONTACT US<span class="text-muted"></span></h2>
+        <p class="lead">Contact number:- 9841205155</p>
+        <p class="lead">Location:- Mandikhatar,ktm</p>
+        <p class="lead">Email:- musicartsociety@gmail.com</p>
+      </div>
+      <div class="col-md-5">
+      
+      </div>
+    </div>
+
+    </div>
+
+    <hr class="featurette-divider">
+
+    
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    
+  </footer>
+</main>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
+
+{% endblock %}
